@@ -9,16 +9,15 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
-      "matches": ["https://*.wikipedia.org/*"],
-      "js": ["scripts/content.js"],
+      "matches": [
+        "https://*.wikipedia.org/*"
+      ],
+      "js": [
+        "scripts/content.js"
+      ],
       "run_at": "document_start"
     }
-  ],
-  "permissions": ["cookies"],
-  "host_permissions": ["https://*.wikipedia.org/*"]
+  ]
 }
